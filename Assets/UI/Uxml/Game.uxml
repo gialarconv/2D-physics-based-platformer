@@ -1,0 +1,34 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Uss/GameScreenStyle.uss?fileID=7433441132597879392&amp;guid=0675bc514089cbd4aa9f9c1f614b2878&amp;type=3#GameScreenStyle" />
+    <ui:VisualElement name="game-panel" style="width: 100%; height: 100%; position: absolute;">
+        <ui:Button display-tooltip-when-elided="true" name="pause_Key" class="pause__button" style="background-image: url(&apos;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=520931913&amp;guid=191137f957a77af439900a1187c38535&amp;type=3#UI_atlas_10&apos;); top: 25px; left: 25px;">
+            <ui:VisualElement name="pause-graphic" class="pause__button-graphic" />
+        </ui:Button>
+        <ui:VisualElement name="coin-icon" class="free-item" style="position: absolute; left: auto; right: 25px; width: 100px; height: 90px; top: 40px; background-image: url(&apos;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-1515762226&amp;guid=191137f957a77af439900a1187c38535&amp;type=3#UI_atlas_21&apos;);" />
+        <ui:Label text="000000000" display-tooltip-when-elided="true" name="coin_Key" class="free-item" style="right: 125px; top: 25px; position: absolute; width: 270px; -unity-font-definition: url(&apos;project://database/Assets/Fonts/Malamondo%20W01%20Regular%20SDF.asset?fileID=11400000&amp;guid=55fd0a4dc7e76d94b81008df6ec9e3fe&amp;type=2#Malamondo W01 Regular SDF&apos;); font-size: 74px; -unity-text-align: upper-right;" />
+        <ui:Label text="00:00" display-tooltip-when-elided="true" name="timer_key" class="free-item" style="position: absolute; width: auto; height: 90px; top: 25px; left: 150px; right: 150px; font-size: 74px; -unity-font-definition: url(&apos;project://database/Assets/Fonts/Malamondo%20W01%20Regular%20SDF.asset?fileID=11400000&amp;guid=55fd0a4dc7e76d94b81008df6ec9e3fe&amp;type=2#Malamondo W01 Regular SDF&apos;); -unity-text-align: upper-center;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="pause-panel" style="width: 100%; height: 100%; position: absolute; align-items: center; justify-content: center; display: flex;">
+        <ui:VisualElement name="panel" class="pause-screen-panel">
+            <ui:VisualElement name="header" style="position: absolute; top: 0; width: 100%; height: 81px;">
+                <ui:Label text="#pause_Key" display-tooltip-when-elided="true" style="position: absolute; width: 100%; height: 100%; -unity-font-definition: url(&apos;project://database/Assets/Fonts/Malamondo%20W01%20Regular%20SDF.asset?fileID=11400000&amp;guid=55fd0a4dc7e76d94b81008df6ec9e3fe&amp;type=2#Malamondo W01 Regular SDF&apos;); font-size: 45px; -unity-text-align: middle-center; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="body" style="width: 90%; height: 490px; top: 90px; position: absolute;">
+                <ui:Button text="#resume_Key" display-tooltip-when-elided="true" name="resume_Key" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/Malamondo%20W01%20Regular%20SDF.asset?fileID=11400000&amp;guid=55fd0a4dc7e76d94b81008df6ec9e3fe&amp;type=2#Malamondo W01 Regular SDF&apos;); color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=1844952815&amp;guid=191137f957a77af439900a1187c38535&amp;type=3#UI_atlas_7&apos;); width: 500px; height: 90px; margin-left: 85px; margin-right: 85px; margin-top: 130px; margin-bottom: 21px; font-size: 45px;" />
+                <ui:Button text="#quit_Key" display-tooltip-when-elided="true" name="quit_Key" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/Malamondo%20W01%20Regular%20SDF.asset?fileID=11400000&amp;guid=55fd0a4dc7e76d94b81008df6ec9e3fe&amp;type=2#Malamondo W01 Regular SDF&apos;); color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-2001029375&amp;guid=191137f957a77af439900a1187c38535&amp;type=3#UI_atlas_15&apos;); height: 90px; width: 500px; margin-left: 82px; margin-right: 82px; margin-top: 16px; margin-bottom: 82px; font-size: 45px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="gameOver-panel" style="width: 100%; height: 100%; position: absolute; align-items: center; justify-content: center; display: flex;">
+        <ui:VisualElement name="panel" class="pause-screen-panel">
+            <ui:VisualElement name="header" style="position: absolute; top: 0; width: 100%; height: 81px;">
+                <ui:Label text="#gameOver_key" display-tooltip-when-elided="true" name="header-text" style="position: absolute; width: 100%; height: 100%; -unity-font-definition: url(&apos;project://database/Assets/Fonts/Malamondo%20W01%20Regular%20SDF.asset?fileID=11400000&amp;guid=55fd0a4dc7e76d94b81008df6ec9e3fe&amp;type=2#Malamondo W01 Regular SDF&apos;); font-size: 45px; -unity-text-align: middle-center; color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="body" style="width: 90%; height: 490px; top: 90px; position: absolute;">
+                <ui:VisualElement name="coin-image" class="free-item pause__button pause__button-panel" style="top: 148px; right: 384px; background-image: url(&apos;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-283940417&amp;guid=191137f957a77af439900a1187c38535&amp;type=3#UI_atlas_19&apos;); width: 120px; height: 120px;" />
+                <ui:Label text="000000000" display-tooltip-when-elided="true" name="final_coins_key" class="free-item pause__button-panel" style="top: 158px; right: auto; width: 200px; -unity-font-definition: url(&apos;project://database/Assets/Fonts/Malamondo%20W01%20Regular%20SDF.asset?fileID=11400000&amp;guid=55fd0a4dc7e76d94b81008df6ec9e3fe&amp;type=2#Malamondo W01 Regular SDF&apos;); font-size: 64px; -unity-text-align: middle-center; color: rgb(0, 0, 0); left: 252px;" />
+                <ui:Button text="#quit_Key" display-tooltip-when-elided="true" name="gameOver_quit_Key" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/Malamondo%20W01%20Regular%20SDF.asset?fileID=11400000&amp;guid=55fd0a4dc7e76d94b81008df6ec9e3fe&amp;type=2#Malamondo W01 Regular SDF&apos;); color: rgb(255, 255, 255); background-image: url(&apos;project://database/Assets/UI/Textures/UI_atlas.psd?fileID=-2001029375&amp;guid=191137f957a77af439900a1187c38535&amp;type=3#UI_atlas_15&apos;); height: 90px; width: 500px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; font-size: 45px; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-items: center; justify-content: center; position: absolute; bottom: 84px; left: 90px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

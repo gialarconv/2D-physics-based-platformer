@@ -1,0 +1,81 @@
+.pause__button {
+    color: rgb(255, 255, 255);
+    width: 90px;
+    height: 90px;
+    background-color: rgba(243, 156, 18, 0);
+    justify-content: center;
+    align-items: center;
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.pause__button:hover {
+    background-color: rgba(241, 196, 15, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    transition-duration: 0.25s;
+    scale: 1.1 1.1;
+}
+
+.pause__button:active {
+    background-color: rgba(255, 255, 255, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    scale: 1.1 1.1;
+}
+
+.pause__button-panel {
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.pause__button-graphic {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(52, 73, 94, 0);
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+}
+
+.free-item {
+    color: rgb(255, 255, 255);
+    width: 90px;
+    height: 90px;
+    background-color: rgba(243, 156, 18, 0);
+    justify-content: center;
+    align-items: center;
+    -unity-text-outline-color: rgba(0, 0, 0, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.pause-screen-panel {
+    background-color: rgba(41, 128, 185, 0);
+    width: 720px;
+    height: 620px;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    background-image: url('project://database/Assets/UI/Textures/UI_atlasV2.psd?fileID=-297258105&guid=9499dd366fac8684bb1b670661797b19&type=3#UI_atlasV2_10');
+}
